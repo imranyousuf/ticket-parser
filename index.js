@@ -83,7 +83,9 @@ function convertPNGtoByteArray(pngData) {
                 console.error(err);
                 // TODO handle error
             }
-            console.log(value.result);
+            if(value == undefined){
+              res.send("No patterns or value found")
+            }
             const response = value.result;
             res.send(response);
         };
