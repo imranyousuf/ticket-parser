@@ -63,8 +63,8 @@ function convertPNGtoByteArray(pngData) {
     return contents;
 }
 
-  app.get('/imran2', function(req, res){
-    res.send('hello world');
+  app.get('/', function(req, res){
+    res.send('For now only accepting post calls');
   });
 
 
